@@ -5,6 +5,6 @@
   "type": "project",
   "minimum-stability": "dev",
   "require": {
-    "composer require kyber/monitor-kyber-tx": "dev-master"
+    "kyber/monitor-kyber-tx": "dev-master"
   }
 }
