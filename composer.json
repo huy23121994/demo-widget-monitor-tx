@@ -1,0 +1,10 @@
+{
+  "name": "Demo",
+  "description": "Demo",
+  "license": "MIT",
+  "type": "project",
+  "minimum-stability": "dev",
+  "require": {
+    "tranbaohuy/monitor-eth-tx": "dev-master"
+  }
+}
