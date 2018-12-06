@@ -33,7 +33,7 @@
   // Pay Token -> Token
   $tx = '0x5aa30da4ed81079b8136801ee4ab1e712a73f9c1df8949236fcd8d6f0b988b62';
 
-  $_GET['tx'] = $tx;
+  $tx = $_GET['tx'];
 
 ?> 
 <!DOCTYPE html>
