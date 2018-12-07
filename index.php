@@ -3,13 +3,12 @@
   use ETH\Monitor;
 
   $monitor = new Monitor([
-    'node' => 'https://ropsten.infura.io',
     'network' => $_GET['network'] ? $_GET['network'] : 'ropsten',
     'blockConfirm' => $_GET['blockConfirm'] ? $_GET['blockConfirm'] : 7,
     'txLostTimeout' => $_GET['timeout'] ? $_GET['timeout'] : 15, // minutes
     'intervalRefetchTx' => 10, // seconds
     'checkPaymentValid' => true,
-    'receivedAddress' => $_GET['receivedAddress'] ? $_GET['receivedAddress'] : '0xb2d904d1981080C9002818D833819e33a58F8388',
+    'receivedAddress' => $_GET['receivedAddress'],
     'amount' => $_GET['amount'] ? $_GET['amount'] : 6,
     'receivedToken' => $_GET['receivedToken'] ? $_GET['receivedToken'] : "KNC",
     'useIntervalLoop' => $_GET['useIntervalLoop'] == 'on' ? true : false,
@@ -33,7 +32,7 @@
   // Pay Token -> Token
   $tx = '0x5aa30da4ed81079b8136801ee4ab1e712a73f9c1df8949236fcd8d6f0b988b62';
 
-  $tx = $_GET['tx'];
+  $tx = $_GET['tx'] ? $_GET['tx'] : $tx;
 
 ?> 
 <!DOCTYPE html>
