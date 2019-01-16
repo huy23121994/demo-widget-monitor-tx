@@ -5,6 +5,6 @@
   "type": "project",
   "minimum-stability": "dev",
   "require": {
-    "kyber/monitor-kyber-tx": "v1.0.8"
+    "kyber/monitor-kyber-tx": "v1.0.9"
   }
 }
